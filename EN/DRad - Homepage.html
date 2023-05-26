@@ -6,175 +6,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D.Rad Project – Deradicalisation in Europe and Beyond: Detect, Resolve, Re-integrate</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-
-    <style>
-        * {
-            font-family: 'Lato', sans-serif;
-        }
-
-        body {
-            background-color: #000;
-        }
-
-        .whitetext {
-            color: white;
-        }
+    <!-- Lato Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 
-        .whitetext:hover {
-            color: #cbd5e1;
-        }
-
-        .whitetext:active {
-            color: #6366F1;
-        }
-
-
-        ol.breadcrumb {
-            padding: 10px 16px;
-            list-style: none;
-            background-color: transparent;
-        }
-
-        ol.breadcrumb li {
-            display: inline;
-            font-size: 18px;
-        }
-
-        ul.breadcrumb li+li:before {
-            padding: 8px;
-            color: black;
-            content: "/\00a0";
-        }
-
-        ol.breadcrumb li a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        ol.breadcrumb li a:hover {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+    <!-- Bootstrap & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
 
-        .custom-toggler.navbar-toggler {
-            border-color: rgb(255, 255, 255);
-        }
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
 
 
-        .VidBG {
-
-            background-image: url(images/hero_dark_90_1.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .roundbtn {
-
-            align-content: center;
-            background-color: #1E293B;
-            border-radius: 15px;
-            color: white;
-            height: 30px;
-            width: 105px;
-            border-style: solid;
-            border-color: transparent;
-
-        }
-
-        .roundbtn:hover {
+    <!-- Custom JS Files -->
+    <script defer src="js/script.js"></script>
 
 
-            align-content: center;
-            background-color: #121822;
-            border-radius: 15px;
-            color: white;
-            height: 30px;
-            width: 105px;
-            border-style: solid;
-            border-color: transparent;
-        }
-
-
-        .roundbtn:active {
-
-
-            align-content: center;
-            background-color: #6366F1;
-            border-radius: 15px;
-            color: white;
-            height: 30px;
-            width: 105px;
-            border-style: solid;
-            border-color: transparent;
-        }
-
-        li {
-
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-
-
-
-
-
-        .center {
-
-            position: relative;
-
-        }
-
-        .center p {
-            margin: 0;
-            position: absolute;
-            right: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-    </style>
-
-
+    <!-- Owl Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
 
 <body>
 
-    <div class="container-fluid" style="padding: 12px 10px 0 10px; background-image: linear-gradient(to right, #04060A, #0c101b, #04060A);
-   ;">
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+
+
+    <div class="container-fluid sticky" style="padding: 12px 10px 0 10px;
+    background-image: linear-gradient(to right, #04060A, #0c101b, #04060A); z-index: 9999999999999999999;">
 
         <nav class="navbar navbar-expand-lg">
             <div class="container" style="padding: 0;">
-                <a class="navbar-brand" style="padding: 0;" href="#">
+                <a class="navbar-brand" style="padding: 0;" href="#"> <img src="Images/DRadLogoDark copy.png"
+                        width="50%" alt="" style="float: left;"> </a>
 
-                    <img src="Images/DRadLogoDark copy.png" width="320vw" alt="">
+                <div style="position: sticky; left: auto; right: 10%;">
 
-                </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-label="Toggle navigation" style="position: sticky;">
 
+                        <span>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-label="Toggle navigation">
-
-                    <span>
-
-                        <i class="fa-solid fa-bars" style="color: #fafafa;"></i>
+                            <i class="fa-solid fa-bars " style="color: #fafafa;"></i>
 
 
-                    </span>
+                        </span>
 
-                </button>
+                    </button>
 
+                </div>
 
                 <div class="collapse navbar-collapse whitetext" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -182,22 +89,40 @@
                             <a class="nav-link" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link whitetext" href="#"> HOME</a>
+                            <a class="nav-link whitetext" href="#Home"> HOME</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link whitetext" href="#"> ABOUT</a>
+                            <a class="nav-link whitetext" href="#About"> ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link whitetext" href="#"> TEAM</a>
+                            <a class="nav-link whitetext" href="#Team"> TEAM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link whitetext" href="#"> RESOURCES</a>
+                            <a class="nav-link whitetext" href="#Resources"> RESOURCES</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link whitetext" href="#"> <button class="roundbtn "> <strong>datamap</strong>
-                                </button></a>
+                            <a class="nav-link whitetext" target="_blank"
+                                href="https://cankadir.github.io/Radical_Project/radmap/radmap/dist/"> <button
+                                    class="roundbtn"> <strong><i class="fa-solid fa-earth-americas"
+                                            style="color: #ffffff;"></i> MAP</strong>
+                                </button> </a>
+                        </li>
+
+                        <li class="nav-item">
+
+
+                            <div class="dropdown">
+
+                                <button onclick="myFunction()" class="dropbtn">English</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="#">العربية</a>
+
+                                </div>
+
+                            </div>
+
                         </li>
 
 
@@ -210,45 +135,1447 @@
         </nav>
     </div>
 
-    <nav aria-label="breadcrumb" class="container-fluid"
-        style=" background-image: linear-gradient(to right, #04060A, #0c101b, #04060A);">
-        <div class="navbar navbar-expand-lg container" style="padding: 0;">
 
 
-            <ol class="breadcrumb" style="padding: 0;">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
+
+
+
+    <div class="container-fluid VidBG verticalcenter" id="Home">
+
+
+        <iframe width="1440px" height="780" src="https://www.youtube.com/embed/znllCpFGEWk?autoplay=1&mute=0&controls=0"
+            allow="accelerometer; autoplay;" frameborder="0" style="margin: 0 auto; display:block;"></iframe>
+
+    </div>
+
+
+    <div class="introgif01 verticalcenter" style="padding: 90px 0 20px 0; ">
+        <div class="container container2">
+            <img src="Images/globeblack4k.gif" loop=infinite alt="" style="width: 80%;">
+            <div class="centered centered2" style="mix-blend-mode: exclusion">
+                <h1> <strong> Detect, Resolve, Reintegrate</strong> </h1>
+            </div>
         </div>
-    </nav>
+    </div>
 
 
 
 
-    <div class="container-fluid VidBG">
+
+    <div class="container" style="padding: 30px; color: #cbd5e1;" id="About">
+        <div class="row" style="padding: 40px 0;" align="justify">
+            <div class="col-sm">
+                <p>
+                <h4 style="color: #F0227C;"> <b> D.Rad is a comparative study of radicalisation <br> and
+                        polarisation in
+                        Europe and beyond... </b> </h4>
+                <span style="font-weight: 300;"><b> It aims to
+                        identify
+                        the actors, networks, and wider social contexts driving radicalisation, particularly among
+                        young
+                        people
+                        in urban and peri-urban areas. </b> D.Rad conceptualises this through the I-GAP spectrum
+                    (injustice-grievance-alienation-polarisation) with the goal of moving towards measurable
+                    evaluations
+                    of
+                    de-radicalisation programmes. <b> Our intention is to identify the building blocks of
+                        radicalisation,</b>
+                    which
+                    include a sense of being victimised; a sense of being thwarted or lacking agency in established
+                    legal
+                    and political structures; and coming under the influence of “us vs them” identity formulations.
+                    <br>
+                    <br>
+                    <b>The D.Rad project encompasses a diverse group of countries including the UK, France, Italy,
+                        Germany, Poland, Hungary, Finland, Slovenia, Bosnia and Herzegovina, Serbia, Kosovo, Israel,
+                        Iraq, Jordan, Turkey, Georgia, and Austria.</b> These countries provide a broad geographical
+                    perspective that spans from Western Europe to the Middle East and the Caucasus.
+                    It bridges academic disciplines ranging from political science and cultural studies to social
+                    psychology and artificial intelligence. <b> Dissemination methods include D.Rad labs, D.Rad
+                        hubs,
+                        policy papers, academic workshops, visual outputs and digital galleries. As such, D.Rad
+                        establishes a rigorous foundation to Bosnia practical interventions geared to prevention,
+                        inclusion and de-radicalisation.</b></span>
+
+                </p>
+            </div>
+        </div>
+        <div class="row" style="font-size: small;" align="justify" style="padding: 20px 0;">
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i
+                        class="fa-solid fa-flag fa-2xl iconsabout" style="padding: 10px;"></i>
+                </div>
+                <p>
+                    <b>From a political viewpoint, </b> the countries studied in the D.Rad project are diverse. Some
+                    are consolidated democracies, others are just beginning the democratization process, while
+                    others have been facing a backslide in recent years. The majority of the countries in the D.Rad
+                    project are members of the European Union and the Council of Europe, as well as contracting
+                    parties to the European Convention on Human Rights. These affiliations are significant because
+                    they impose obligations on the countries to respect and promote core values such as democracy,
+                    the rule of law, and fundamental rights.
+                </p>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i
+                        class="fa-solid fa-hand-holding-dollar fa-2xl iconsabout" style="padding: 10px;"> </i>
+                </div>
+                <p>
+                    </i><b>Economically,</b> the majority
+                    of the countries studied in the
+                    D.Rad project have developed
+                    market economies. This means that the decisions regarding what and how to produce and distribute
+                    are determined by the laws of supply and demand, and the state plays a limited role. Some
+                    countries made the transition to market economies after World War II, while others did so in the
+                    1990s following the transition from communist systems.
+
+                </p>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i class="fa-solid
+                    fa-users fa-2xl iconsabout" style="padding: 10px;"></i>
+                </div>
 
 
-        <img src="https://street360.net/img/italy/lombardy/milan.jpg" alt="" style="margin:auto; display:block;">
+
+                <p>
+                    <b> From a socio-cultural point of view,</b>it is interesting to note that the countries
+                    selected represent different traditions of thought and religions. These features explain why the
+                    comparative analysis in the D.Rad research shows quite a multifaceted picture, especially
+                    regarding tools and strategies to counter radicalism at the level of both preventive measures
+                    and de-radicalisation programmes. The D.Rad project offers a unique opportunity to study a
+                    diverse group of countries from different perspectives.
+
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="container" style="padding: 40px 0;" id="Team">
+
+            <h4 style="color: white; padding: 30px 0; text-align: center;"> <b> Map Design Team </b> </h4>
+
+            <div class="row verticalcenter">
+                <div class="col-xxs" style="padding: 0;">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Images/Team/ivo.png" alt="Avatar" style=" width: 500px;
+                                height: 500px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div style="margin: 25px;">
+                                    <span style="color: #6366F1;">
+                                        <h1> <strong> Ivo Furman </strong> </h1>
+                                    </span>
+                                    <p align="justify" style="font-size: small; font-weight: 200;">Ivo Furman is an
+                                        assistant professor at Istanbul Bilgi University’s Faculty of New Media and
+                                        Communication. He completed his PhD in Sociology at Goldsmiths College,
+                                        University of London in 2015. His research has been supported by numerous
+                                        institutions including the Arts and Humanities Research Council (AHRC), the
+                                        Danish Agency for Science and Higher Education, Turkish Science and Technology
+                                        Foundation (TUBITAK) and Stiftung Mercator. He is the co-editor and co-author of
+                                        “Politics of Culture in Contemporary Turkey”, published by Edinburgh University
+                                        Press in 2021. His most recent publication (2023) for Social Media + Society,
+                                        looks at Russian mis and disinformation efforts in the Turkish Twittersphere.
+                                        <br><br>
+                                        He is currently an academic consultant for “False Information in Turkey from the
+                                        Perspective of Media Users and Resilience to False Information”, a 2 year
+                                        research project funded by Turkish Science and Technology Foundation (TUBITAK).
+                                        He is also management committee member and grant awarding coordinator for
+                                        “Grassroots of Digital Europe: from Historic to Contemporary Cultures of
+                                        Creative Computing” (GRADE), a 4 year research grant funded by European
+                                        Cooperation in Science and Technology.
+                                        <br>
+                                        His research interests include digital sociology, media histories, computational
+                                        methodologies and Turkish studies.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="col-xxs" style="padding: 0;">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Images/Team/alper.png" alt="Avatar" style=" width: 500px;
+                                height: 500px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div style="margin: 25px;">
+                                    <span style="color: #6366F1;">
+                                        <h1> <strong> Alper Kırklar </strong> </h1>
+                                    </span>
+                                    <p align="justify" style="font-size: small; font-weight: 200;">Dr. Alper Kırklar is
+                                        a filmmaker and professor of media based in
+                                        İstanbul.
+                                        <br><br>
+                                        His recent
+                                        area of work is focused on implementation of documentary practices to social
+                                        media
+                                        and interactive storytelling. He is currently a faculty member of Istanbul Bilgi
+                                        University School of Communication.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="col-xxs" style="padding: 0;">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Images/Team/abdullah.png" alt="Avatar" style=" width: 500px;
+                                height: 500px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div style="margin: 25px;">
+                                    <span style="color: #6366F1;">
+                                        <h1> <strong> Abdullah Alsharif </strong> </h1>
+                                    </span>
+                                    <p align="justify" style="font-size: small; font-weight: 200;">Abdullah has a strong
+                                        academic background in Visual Communication Design. He obtained his Bachelor of
+                                        Arts degree in VCD from Bahçeşehir University in Istanbul, Turkey. Through his
+                                        undergraduate studies, he discovered his potential in communication both
+                                        visually and conceptually. He is Currently pursuing his Master of Arts degree in
+                                        Media and Communication Systems (M&CS) at Bilgi University, also located in
+                                        Istanbul. This program is the next step in achieving his goal of becoming a
+                                        tutor and reshaping his promising future.
+                                        <br><br>
+                                        He is also a highly experienced Graphic Designer with more
+                                        than seven years of experience, he has acuminated creative and technical
+                                        abilities to deliver exceptional results for diverse customer projects. Whether
+                                        it's designing branding materials, creating engaging social media content, or
+                                        crafting captivating print and digital campaigns, his expertise allows him to
+                                        seamlessly merge form and function to produce visually stunning outputs. He has
+                                        the capacity to fulfil his clients' needs and work with them to produce designs
+                                        that meet their expectations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="col-xxs" style="padding: 0;">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="Images/Team/can.png" alt="Avatar" style=" width: 500px;
+                                height: 500px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <div style="margin: 25px;">
+                                    <span style="color: #6366F1;">
+                                        <h1> <strong> Can Sucuoğlu </strong> </h1>
+                                    </span>
+                                    <p align="justify" style="font-size: small; font-weight: 200;">Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                        deserunt mollit anim id est laborum</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
 
     </div>
 
 
 
-    <div class="container" style="padding: 40px 0; color: #cbd5e1;">
-        <h4 style="color: #F0227C;">Video Title for Introducing Project </h4>
-        <p>D.Rad is a comparative study of radicalisation and polarisation in Europe and beyond. It aims
-            to identify the actors, networks, and wider social contexts driving radicalisation, particularly
-            among young people in urban and peri-urban areas. D.Rad conceptualises this through the I-
-            GAP spectrum (injustice-grievance-alienation-polarisation) with the goal of moving towards
-            measurable evaluations of de-radicalisation programmes. </p>
-        <button type="button" class="btn btn-primary"
-            style="background-color: #6366F1; width: 243px; height: 34px;">LAUNCH PLATFORM</button>
+
+
+    <h4 style="color: white; padding: 30px 0; text-align: center;"> <b> Project Partners </b> </h4>
+
+    <div style="background-color: white; border-radius: 10px; height: 200px;" class="container">
+
+        <div class="container" style="padding: 40px;">
+
+
+
+            <div class="brand-carousel owl-carousel container-fluid" style="margin: 0;  ">
+
+                <div class="img-div">
+                    <img src="Images/Partner Logos/Austria-1-1536x666.jpg" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/bilgi-logotype-en.jpg" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/Brunel-1536x758.jpg" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/eurac_rlogo_hd.jpg" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/Free-Uni.png" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/JDU.png" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/kcss-logo.png" alt="">
+                </div>
+                <div class="img-div">
+                    <img src="Images/Partner Logos/LOGO-RGB-APIS-ANG-40.png" alt="">
+                </div>
+                <div class="img-div" style="transform: scale(.5);">
+                    <img src="Images/Partner Logos/Proni.jpg" alt="">
+                </div>
+
+            </div>
+
+
+        </div>
+
     </div>
-    <!-- Bootstrap JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <h4 style="color: white; padding: 30px 0; text-align: center;"> <b> Resources </b> </h4>
+
+
+    <div class="container" style="padding: 30px 0;">
+
+        <div class="accordion brad-10 background-black" id="resourcesAccordion">
+            <!-- Austria Card -->
+            <div class="card brad-10 background-black">
+                <div class="card-header background-black" id="headingAustria">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left whitetext text-size-24" type="button"
+                            data-toggle="collapse" data-target="#collapseAustria" aria-expanded="false"
+                            aria-controls="collapseAustria">
+                            Austria
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseAustria" class="collapse" aria-labelledby="headingAustria"
+                    data-parent="#resourcesAccordion">
+                    <div class="card-body background-black">
+                        <!-- Sub Accordions for Austria -->
+                        <div class="accordion brad-10" id="accordionAustria">
+                            <!-- DSSLAustria Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingDSSLAustria">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseDSSLAustria"
+                                            aria-expanded="false" aria-controls="collapseDSSLAustria">
+                                            Digital space or supranational level
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseDSSLAustria" class="collapse" aria-labelledby="headingDSSLAustria"
+                                    data-parent="#accordionAustria">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for DSSLAustria -->
+                                        <table class="table table-bordered background-black whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source and Literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Jamal al-Khatib </th>
+                                                    <td>TURN – Association for the Prevention of Violence and Extremism
+                                                        (Verein für Gewalt- und Extremismusprävention) </td>
+                                                    <td>Delivering alternative narratives online, community engagement
+                                                        and empowerment; aiming at young people who sympathize with
+                                                        jihadist worldviews, teachers, multiplicators, youth workers
+                                                    </td>
+                                                    <td>https://www.turnprevention.com/jamal; scientific project report:
+                                                        https://www.eberatungsjournal.net/wp-content/uploads/2019/05/reic
+                                                        her_lippe.pdf
+                                                    </td>
+                                                    <td>online; all of Austria and beyond
+
+                                                        (Perhaps pin to Vienna, but note as online across Austria)
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Decount</th>
+                                                    <td>ISF-co-funded EU pro-
+                                                        ject; Institute for the Sociology of Law and
+                                                        Criminology (IRKS),
+                                                        Austrian Institute for
+                                                        International Affairs
+                                                        (oiip), BOJA, Neustart, Derad, the Ministry of the Interior
+                                                    </td>
+                                                    <td>To prevent teenagers and adolescents from becoming radicalised;
+                                                        Website offering materials on
+                                                        radicalisation and extremism prevention; Video game through
+                                                        which processes of radicalisation can be
+                                                        re-enacted plus a guide for its use in youth centres and schools
+                                                        for teachers
+                                                    </td>
+                                                    <td>https://www.extremismus.info/
+                                                    </td>
+                                                    <td>VIENNA
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Mothers’
+                                                        School against
+                                                        Extremism – Parenting for
+                                                        Peace
+                                                    </th>
+                                                    <td>Women without borders
+                                                    </td>
+                                                    <td>Training in early detection of signs of radicalisation among
+                                                        children aiming at worried mothers
+                                                    </td>
+                                                    <td>https://wwb.org/
+                                                    </td>
+                                                    <td>Global initiative, situated in Vienna, too
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- NLAustria Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingNLAustria">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseNLAustria"
+                                            aria-expanded="false" aria-controls="collapseNLAustria">
+                                            National level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseNLAustria" class="collapse" aria-labelledby="headingNLAustria"
+                                    data-parent="#accordionAustria">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for NLAustria -->
+                                        <table class="table table-bordered background-black whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source and Literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">BNED - National Network for Prevention and
+                                                        Countering Violent Extremism and
+                                                        De-Radicalisation
+                                                        <i>(Bundesweites Netzwerk Extremismusprävention
+                                                            und Deradikalisierung)</i>
+
+                                                    </th>
+                                                    <td>Seven federal ministries, several NGOs and civil-society
+                                                        organisations, federal provinces, BVT, Austrian
+                                                        Association of Cities and Towns, Austrian Association of
+                                                        Municipalities
+                                                    </td>
+                                                    <td>Central strategic and policy-advisory body for the nationwide
+                                                        discussion of extremism prevention and
+                                                        deradicalisation in Austria; networking, dissemination of
+                                                        information among network partners; The
+                                                        network is tasked with a) bundling individual measures for
+                                                        extremism prevention and de-radicalisation;
+                                                        b) promoting professional and interdisciplinary exchange on
+                                                        nationwide measures; c) identifying suitable
+                                                        inter- vention measures (such as an exit program); and d)
+                                                        drawing up recommendations for action,
+                                                        strategies, action plans, etc. on current topics
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                    <td>National programme; coordinated by the Ministry of the Interior,
+                                                        situated in Vienna
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SNRLAustria Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingSNRLAustria">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseSNRLAustria"
+                                            aria-expanded="false" aria-controls="collapseSNRLAustria">
+                                            Sub-national/Regional level
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSNRLAustria" class="collapse" aria-labelledby="headingSNRLAustria"
+                                    data-parent="#accordionAustria">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for SNRLAustria -->
+                                        <table class="table table-bordered whitetext background-black whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source and Literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Next: No to Extremism
+                                                    </th>
+                                                    <td>Large network of public agencies and NGOs in the province of
+                                                        Styria and the city of
+                                                        Graz
+                                                    </td>
+                                                    <td>Support of institutions dealing with the prevention of
+                                                        extremism, awarenessraising, provision of
+                                                        materials on extremism and hate speech, legal support on
+                                                        extremism and hate speech, workshops;
+                                                        Institutions facing extremism prevention in their work, civil
+                                                        society, educators and teachers,
+                                                        lecturers, politicians and administrators
+                                                    </td>
+                                                    <td>https://www.noextremism.at/
+                                                    </td>
+                                                    <td>STYRIA/ Graz
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Not in God’s
+                                                        Name
+                                                    </th>
+                                                    <td>Not in God’s Name, funding by Federal Chancellery and other
+                                                        public agencies; cooperation with schools
+
+                                                    </td>
+                                                    <td>Awareness raising, training; children and young adults
+                                                    </td>
+                                                    <td>https://kja.at/praevention/netzwerkderadikalisierungpraevention/
+                                                    </td>
+                                                    <td>Vienna
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">WNED –Vienna Network Democracy
+                                                        Culture and
+                                                        Prevention <i>(Wiener Netzwerk Demo-
+                                                            kratiekultur
+                                                            und Präven-
+                                                            tion) </i>
+                                                    </th>
+                                                    <td>City of Vienna, including several municipal departments, network
+                                                        of practitioners, group of experts;
+                                                        schools, open youth care, collaboration with BNED
+                                                    </td>
+                                                    <td>Awareness raising, training; children and young adults
+                                                    </td>
+                                                    <td>https://www.wien. gv.at/menschen/in
+                                                        tegration/datenfakten/toolbox-integration.html
+                                                    <td>Vienna</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LAustria Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingLAustria">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseLAustria" aria-expanded="false"
+                                            aria-controls="collapseLAustria">
+                                            National level
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseLAustria" class="collapse" aria-labelledby="headingLAustria"
+                                    data-parent="#accordionAustria">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for LAustria -->
+                                        <table class="table table-bordered background-black whitetext m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source and Literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Werkstatt.Wien <i>(Workshop.Vienna)</i> </th>
+                                                    <td>Municipal Department
+                                                        17 “Integration and Diversity”, City of Vienna </td>
+                                                    <td>Education platform offering lectures, discussions and
+                                                        best-practice examples on political-religious
+                                                        extremism, deradicalization and prevention aiming at multipliers
+                                                        in the field of community work, police,
+                                                        educators
+                                                    </td>
+                                                    <td>https://www.wien. gv.at/english/social/integration/
+                                                    </td>
+                                                    <td>Vienna
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Networking Platform / Afghan and Chechen
+                                                        Communities
+                                                    </th>
+                                                    <td>Municipal Department
+                                                        17 “Integration and Diversity”, City of Vienna
+                                                    </td>
+                                                    <td>Empowering communities by developing networks and dialogue with
+                                                        the authorities and with institutions
+                                                        like the municipal departments of the City of Vienna, health
+                                                        institutions, the police, educational and
+                                                        labour market institutions; development of networks and dialogue
+                                                        with wider society, e.g. neighbourhood
+                                                        associations; to offer training and information on relevant
+                                                        topics for daily life; to develop projects
+                                                        that will further the societal inclusion of communities;
+                                                        workshops for teenagers with a focus on
+                                                        democracy, non-violence and leisure activities
+                                                    </td>
+                                                    <td>https://www.wien. gv.at/english/social/integration/
+                                                    </td>
+                                                    <td>Vienna
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bosnia  Card -->
+            <div class="card brad-10 background-black">
+                <div class="card-header background-black" id="headingBosnia">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left whitetext background-black text-size-24" type="button"
+                            data-toggle="collapse" data-target="#collapseBosnia" aria-expanded="true"
+                            aria-controls="collapseBosnia">
+                            Bosnia
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseBosnia" class="collapse" aria-labelledby="headingBosnia"
+                    data-parent="#resourcesAccordion">
+                    <div class="card-body background-black">
+                        <!-- Sub Accordions for Bosnia -->
+                        <div class="accordion brad-10" id="accordionBosnia">
+                            <!-- NLBosnia Card -->
+                            <div class="card brad-10">
+                                <div class="card-header background-black" id="headingNLBosnia">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseNLBosnia" aria-expanded="false"
+                                            aria-controls="collapseNLBosnia">
+                                            National level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseNLBosnia" class="collapse " aria-labelledby="headingNLBosnia"
+                                    data-parent="#accordionBosnia">
+                                    <div class="card-body p-0 background-black whitetext">
+                                        <!-- Sub Accordions for NLBosnia -->
+                                        <table class="table table-bordered whitetext m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Parliamentary Assembly of Bosnia and Herzegovina
+                                                    </th>
+                                                    <td>Combating radicalism and terrorism with adjustments to the
+                                                        Criminal Code of Bosnia and Herzegovina </td>
+                                                    <td>http://www.tuzilastvobih.gov.ba/?opcija
+                                                        =sadrzaj&kat=4&id=40&jezik=e
+                                                    </td>
+                                                    <td>Decreased number of terrorist attacks in
+                                                        Bosnia and
+                                                        Herzegovina
+                                                        GTD Search Results
+                                                        (umd.edu)
+                                                    </td>
+                                                    <td>Sarajevo
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th scope="row">Interreligious council of Bosnia and Herzegovina
+                                                    </th>
+                                                    <td>Establishing interreligious communication and cooperation in
+                                                        Bosnia and Herzegovina </td>
+                                                    <td>https://mrv.ba/o-nama-2/
+                                                    </td>
+                                                    <td>Implementation of different projects aimed at peace building in
+                                                        Bosnia and Herzegovina and sending anti- radicalism massages.
+                                                        https://mrv.ba/wp- content/uploads/2020/ 06/irc_bih_4X0.pdf
+                                                    </td>
+                                                    <td>Sarajevo
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <!--  Sub-national/Regional level Card -->
+                            <div class="card brad-10">
+                                <div class="card-header background-black" id="headingSNRLBosnia">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left text-size-18 text-white" type="button"
+                                            data-toggle="collapse" data-target="#collapseSNRLBosnia"
+                                            aria-expanded="false" aria-controls="collapseSNRLBosnia">
+                                            Sub-national/Regional level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseSNRLBosnia" class="collapse " aria-labelledby="headingSNRLBosnia"
+                                    data-parent="#accordionBosnia">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for SNRLBosnia -->
+                                        <table class="table table-bordered whitetext m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Government of Federation of Bosnia and Herzegovina
+                                                    </th>
+                                                    <td>Action plan for combating all forms of extremist and
+                                                        terrorist action considering values of
+                                                        democracy, the rule of law and human rights.
+                                                    </td>
+                                                    <td>http://www.fbihvlada.gov.ba/file/Akcioni%20p lan(2).pdf
+                                                    </td>
+                                                    <td>Decreased number of terrorist attacks in Federation of Bosnia
+                                                        and Herzegovina GTD Search Results (umd.edu)
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- LBosnia Card -->
+                            <div class="card brad-10">
+                                <div class="card-header background-black" id="headingLBosnia">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseLBosnia" aria-expanded="false"
+                                            aria-controls="collapseLBosnia">
+                                            Local level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseLBosnia" class="collapse " aria-labelledby="headingLBosnia"
+                                    data-parent="#accordionBosnia">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for LBosnia -->
+                                        <table class="table table-bordered whitetext m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <th scope="row">
+                                                        Humanity in Action
+                                                    </th>
+                                                    <td>
+                                                        Strengthening
+                                                        capacities for resilience among
+                                                        youth in the
+                                                        Western
+                                                        Balkans
+                                                        against
+                                                        radicalization and violent extremism
+                                                    </td>
+                                                    <td>
+                                                        https://www.humanityinaction.org/bo
+                                                        snia-herzegovina-
+                                                        programs/strengthening-resilience-
+                                                        of-the-youth-against-radicalization- in-the-western-balkans/
+                                                    </td>
+                                                    <td>
+                                                        Reports from the
+                                                        focus groups of 8-10 young
+                                                        people in
+                                                        Albania, Bosnia and
+                                                        Herzegovina,
+                                                        Kosovo and
+                                                        Macedonia at
+                                                        high schools
+                                                        and universities
+                                                    </td>
+                                                    <td>Albania, Bosnia and
+                                                        Herzegovina,
+                                                        Kosovo and
+                                                        Macedonia
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">
+                                                        International Organization for Migration (BHRI
+                                                        Program)
+                                                    </th>
+                                                    <td>
+                                                        BHRI
+                                                        supports
+                                                        local activist voices and
+                                                        efforts, bolstering their involvement with authorities, and
+                                                        developing national messaging campaigns and media
+                                                        content based upon issues raised at the local level.
+                                                    </td>
+                                                    <td>
+                                                        https://bih.iom.int/
+                                                    </td>
+                                                    <td>
+                                                        Youth workers
+                                                        educated to
+                                                        respond to the needs of young people
+                                                        Trained some 260 young grassroot
+                                                        s journalist
+                                                        Supported
+                                                        major online news
+                                                        portals to counter hate speech
+                                                        on their sites through
+                                                        a combination of
+                                                        targeted campaigning and technical support.
+                                                    </td>
+                                                    <td>
+                                                    </td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Finland Card -->
+            <div class="card brad-10 background-black">
+                <div class="card-header background-black" id="headingFinland">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left text-size-24 whitetext" type="button"
+                            data-toggle="collapse" data-target="#collapseFinland" aria-expanded="false"
+                            aria-controls="collapseFinland">
+                            Finland
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFinland" class="collapse" aria-labelledby="headingFinland"
+                    data-parent="#resourcesAccordion">
+                    <div class="card-body background-black">
+                        <!-- Sub Accordions for Finland -->
+                        <div class="accordion brad-10" id="accordionFinland">
+
+
+                            <!-- NLFinland Card -->
+                            <div class="card brad-10">
+                                <div class="card-header background-black" id="headingNLFinland">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseNLFinland"
+                                            aria-expanded="false" aria-controls="collapseNLFinland">
+                                            National and local
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseNLFinland" class="collapse " aria-labelledby="headingNLFinland"
+                                    data-parent="#accordionFinland">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for NLFinland -->
+
+                                        <table class="table table-bordered m-0 whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Program(s)
+                                                        Name, year</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Target group(s)</th>
+                                                    <th scope="col">Place/Location
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">National action plan for the prevention of violent
+                                                        radicalisation and extremism, 2019–2023
+                                                        (previous action plans from 2012 and 2016),
+                                                        https://rm.coe.int/finland-action-plan-2019/16809ea382
+                                                    </th>
+                                                    <td>A national action plan for the prevention of violent
+                                                        radicalisation and extremism, prepared in broad cooperation with
+                                                        national and local authorities, civil society organisations,
+                                                        communities and researchers.
+                                                    </td>
+                                                    <td>Ministry of the Interior (responsible for the coordination);
+                                                        national and local authorities, civil society organisations,
+                                                        communities and researchers
+                                                    </td>
+                                                    <td>Finnish authorities, civil society organisations, communities
+                                                        and researchers working with the prevention of violent
+                                                        radicalisation and extremism; Finnish society broadly understood
+                                                    </td>
+                                                    <td>National programme; coordinated from the Ministry of the
+                                                        Interior, situated in Helsinki
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">EXIT programme, 2020–ongoing,
+                                                        https://www.hdl.fi/en/exit2020/
+                                                    </th>
+                                                    <td>The exit programme consists of three focus areas: education of
+                                                        stakeholders, creation of operating model and client work. The
+                                                        aim of education is to spread knowledge and understanding the
+                                                        importance and substance of exit work. The model creation refers
+                                                        to building permanent practice, which is shaped by co-learning
+                                                        with other EU member states. The client work offers mentoring
+                                                        for voluntary, violently radicalised people or ones at the risk
+                                                        of violent radicalisation.
+                                                    </td>
+                                                    <td>Deaconess Foundation (CSO)
+                                                    </td>
+                                                    <td>Individuals (voluntary people wanting to cut loose from a
+                                                        radical ideology), stakeholders
+                                                    </td>
+                                                    <td>Helsinki Metropolitan Area, Turku and Oulu
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">RADIK project, 2021–2022,
+                                                        https://thl.fi/fi/tutkimus-ja-kehittaminen/tutkimukset-ja-hankkeet/vakivaltaisen-radikalisoitumisen-ja-ekstremismin-ennalta-ehkaisy-sosiaali-ja-terveystoimessa-radik-
+                                                    </th>
+                                                    <td>Increasing know-how on violent radicalisation, its
+                                                        identification and prevention amongst health and social sector
+                                                        professionals. Creating a supporting tool and web-based training
+                                                        programme and increasing knowledge on the matter.
+                                                    </td>
+                                                    <td>National Institute for Health and Welfare
+                                                    </td>
+                                                    <td>Health and social sector professionals
+                                                    </td>
+                                                    <td>Operates both nationally and locally in Helsinki and Oulu; the
+                                                        project is carried out by the National Institute for Health and
+                                                        Welfare (headquarters situated in Helsinki)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Reach Out 1, 2 & 3
+                                                        2013–2023,
+                                                        https://www.kirkonulkomaanapu.fi/en/us/donors/international-donors/eu-dg-home/reach-project-finland/
+                                                    </th>
+                                                    <td>Development of new policies and forms of supporting people
+                                                        returning from conflict areas and families impinged on by
+                                                        violent radicalisation, supporting the building of cooperation
+                                                        and trust between authorities, different religious communities,
+                                                        and organisations by adding knowledge and coordination.
+                                                    </td>
+                                                    <td>Finn Church Aid (CSO)
+                                                    </td>
+                                                    <td>Authorities, religious communities, and NGOs
+                                                    </td>
+                                                    <td>Operates mainly at the local level in Oulu, Turku, Helsinki and
+                                                        Tampere; some national-level activities; the project is carried
+                                                        out by the Finn Church Aid (headquarters situated in Helsinki)
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- France Card -->
+            <div class="card brad-10 background-black">
+                <div class="card-header background-black" id="headingFrance">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left whitetext text-size-24" type="button"
+                            data-toggle="collapse" data-target="#collapseFrance" aria-expanded="false"
+                            aria-controls="collapseFrance">
+                            France
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseFrance" class="collapse" aria-labelledby="headingFrance"
+                    data-parent="#resourcesAccordion">
+                    <div class="card-body background-black">
+                        <!-- Sub Accordions for France -->
+                        <div class="accordion brad-10" id="accordionFrance">
+                            <!-- NLFrance Card -->
+                            <div class="card brad-10">
+                                <div class="card-header background-black" id="headingNLFrance">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left text-size-18 whitetext" type="button"
+                                            data-toggle="collapse" data-target="#collapseNLFrance" aria-expanded="true"
+                                            aria-controls="collapseNLFrance">
+                                            National Level
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseNLFrance" class="collapse " aria-labelledby="headingNLFrance"
+                                    data-parent="#accordionFrance">
+                                    <div class="card-body background-black p-0">
+                                        <!-- Sub Accordions for NLFrance -->
+                                        <table class="table table-bordered m-0 whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Centre for Prevention, Integration and Citizenship”
+                                                        (Centre de prévention, d’insertion et de citoyenneté, (CPIC)),
+                                                        2016-2021
+                                                    </th>
+                                                    <td>A Prevention of radicalisation of persons who are yet to engage
+                                                        in criminal terrorist activity
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist,
+                                                        Always a Jihadist? A Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist, Always a Jihadist? A
+                                                        Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Pontourny, Indre-et-Loire
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Research and intervention on extremist violence
+                                                        (Recherche et intervention sur les violences extrémistes:
+                                                        (RIVE)), 2016-2018
+                                                    </th>
+                                                    <td>A Reintegration of persons already convicted of terror related
+                                                        crimes before or after serving their sentence
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist, Always a Jihadist? A
+                                                        Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist, Always a Jihadist? A
+                                                        Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Paris and Marseille
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Programmes of Individualised
+                                                        Support and Social Reaffiliation
+                                                        (Programmes d’accompagnement individualisé et de réaffiliation
+                                                        sociale (PAIRS)), 2018-
+
+                                                    </th>
+                                                    <td>Disengagement” of persons convicted in terrorism and of ordinary
+                                                        detainees suspected of being radicalised from violent
+                                                        radicalisation and prevent the risk of violence while
+                                                        encouraging social reintegration
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist, Always a Jihadist? A
+                                                        Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Hecker M, ‘Once a Jihadist, Always a Jihadist? A
+                                                        Deradicalization Program
+                                                        Seen from the Inside’ (2021).
+                                                    </td>
+                                                    <td>Paris, Marseille, Lyon, Lille
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- SNRLFrance Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingSNRLFrance">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseSNRLFrance"
+                                            aria-expanded="true" aria-controls="collapseSNRLFrance">
+                                            Sub-national/Regional level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseSNRLFrance" class="collapse " aria-labelledby="headingSNRLFrance"
+                                    data-parent="#accordionFrance">
+                                    <div class="card-body p-0 background-black">
+                                        <!-- Sub Accordions for SNRLFrance -->
+                                        <table class="table table-bordered m-0 whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">“Mulhouse programme”
+                                                    </th>
+                                                    <td>Social reintegration of persons undergoing criminal proceedings
+                                                        for involvement in violent crimes
+                                                    </td>
+                                                    <td>Benbassa E and Troendlé C,
+                                                        ‘Rapport Final de La Mission d’information Sur Le
+                                                        Désendoctrinement, Le
+                                                        Désembrigadement et La
+                                                        Réinsertion Des Djihadistes En France et En Europe, N° 633’ (12
+                                                        July 2017).
+                                                    </td>
+                                                    <td>Benbassa E and Troendlé C,
+                                                        ‘Rapport Final de La Mission d’information Sur Le
+                                                        Désendoctrinement, Le
+                                                        Désembrigadement et La
+                                                        Réinsertion Des Djihadistes En France et En Europe, N° 633’ (12
+                                                        July 2017).
+                                                    </td>
+                                                    <td>Mulhouse
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Germany Card -->
+            <div class="card brad-10 background-black">
+                <div class="card-header background-black" id="headingGermany">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left whitetext text-size-24" type="button"
+                            data-toggle="collapse" data-target="#collapseGermany" aria-expanded="false"
+                            aria-controls="collapseGermany">
+                            Germany
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseGermany" class="collapse" aria-labelledby="headingGermany"
+                    data-parent="#resourcesAccordion">
+                    <div class="card-body">
+                        <!-- Sub Accordions for Germany -->
+                        <div class="accordion brad-10" id="accordionGermany">
+                            <!-- NLGermany Card -->
+                            <div class="card brad-10 background-black">
+                                <div class="card-header background-black" id="headingNLGermany">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-block text-left whitetext text-size-18" type="button"
+                                            data-toggle="collapse" data-target="#collapseNLGermany" aria-expanded="true"
+                                            aria-controls="collapseNLGermany">
+                                            National level
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseNLGermany" class="collapse " aria-labelledby="headingNLGermany"
+                                    data-parent="#accordionGermany">
+                                    <div class="card-body background-black">
+                                        <!-- Sub Accordions for NLGermany -->
+
+                                        <table class="table table-bordered m-0 whitetext">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">Institution(s)</th>
+                                                    <th scope="col">Aim</th>
+                                                    <th scope="col">Source</th>
+                                                    <th scope="col">Evidence of effectiveness / literature</th>
+                                                    <th scope="col">Place
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1. ‘Facing All the
+                                                        Facts’
+                                                    </th>
+                                                    <td>CEJI,
+                                                        NKE
+                                                    </td>
+                                                    <td>hate crime awareness /
+                                                        monitoring
+                                                    </td>
+                                                    <td>https://ceji.org/facing-all-the-facts-country-reports/
+                                                    </td>
+                                                    <td>https://ceji.org/facing-all-the-facts-country-reports/
+                                                    </td>
+                                                    <td> National
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2. ‘Call It Hate: Raising
+                                                        Awareness of Anti-LGBT Hate
+                                                        Crime’
+                                                    </th>
+                                                    <td>Háttér,
+                                                        HHC,
+                                                        TASZ
+                                                    </td>
+                                                    <td>anti-LGBT hate crime awareness
+                                                    </td>
+                                                    <td>https://hatter.hu/jogsegely/projektek/call-it-hate-nevezd-neven-a-gyuloletet
+                                                    </td>
+                                                    <td>https://hatter.hu/jogsegely/projektek/call-it-hate-nevezd-neven-a-gyuloletet
+                                                    </td>
+                                                    <td> National
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">‘Mediation and Restorative
+                                                        Justice in Prison
+                                                        Settings’
+                                                    </th>
+                                                    <td>Foresee
+                                                    </td>
+                                                    <td>To test if restorative justice practices can help supporting
+                                                        victims of crime, raising responsibilitytaking in offenders,
+                                                        supporting the prison staff and inmates in peacefully resolving
+                                                        their
+                                                        internal conflicts and reintegrating offenders into society
+                                                        after release.
+                                                    </td>
+                                                    <td>https://www.euforumrj.org/en/mereps-2009-2012
+                                                    </td>
+                                                    <td>http://mereps.foresee.hu/index.php?L=2
+                                                    </td>
+                                                    <td> National
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Prevention of radicalization in the prison-
+                                                        system’
+                                                    </th>
+                                                    <td>Foresee,
+                                                        Budapest
+                                                        Centre for the
+                                                        International
+                                                        Prevention of Genocide and
+                                                        Mass Atrocities,
+                                                        Menedék,
+                                                        NKE
+                                                    </td>
+                                                    <td>Understanding of the reasons behind radicalization and to
+                                                        improve skills required to recognise and prevent radicalisation
+                                                        through training
+                                                        activities also supporting and accelerating the reaction of
+                                                        staff.
+                                                    </td>
+                                                    <td>http://mereps.foresee.hu/index.php?L=2
+                                                    </td>
+                                                    <td>http://mereps.foresee.hu/en/segedoldalak/news/774/fac6bfea4b/143/
+                                                    </td>
+                                                    <td> Local/Budapest
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+    <footer class="background-purple">
+        <div class="footer container">
+            <div class="w-25">
+                <img src="https://dradproject.com/wp-content/uploads/2021/03/drad-logo-social-tagline-eu@3x-white-e1615230053462.png"
+                    width="75%">
+            </div>
+
+            <div class="w-25">
+                <div> <strong>The Glasgow Caledonian University</strong>
+                    <br>
+                    Cowcaddens Rd, Glasgow G4 0BA, United Kingdom
+                </div>
+            </div>
+
+            <div class="w-25">
+                <div><strong>PROJECT COORDINATION</strong>
+                    <br>
+                    Prof. Umut Korkut | Glasgow School for Business and Society, Glasgow Caledonian University | <a
+                        href="mailto:Umut.Korkut@gcu.ac.uk">Umut.Korkut@gcu.ac.uk</a>
+                    <br>Marcus Nicolson | Glasgow School for Business and Society, Glasgow Caledonian University | <a
+                        href="mailto:Marcus.Nicolson@gcu.ac.uk">Marcus.Nicolson@gcu.ac.uk</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        $('.brand-carousel').owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+
+        }) 
+    </script>
+
 </body>
 
 </html>
