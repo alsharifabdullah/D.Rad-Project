@@ -34,6 +34,18 @@ body {
 }
 
 
+.whitefont {
+    color: white;
+}
+
+/* 
+.whitefont:hover {
+    color: #cbd5e1;
+}
+ */
+
+
+
 ol.breadcrumb {
     padding: 10px 16px;
     list-style: none;
