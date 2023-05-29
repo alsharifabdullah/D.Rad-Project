@@ -488,3 +488,12 @@ html {
         align-items: center;
     }
 }
+
+
+
+.team-bio{
+    text-align: justify;
+    font-size: small;
+    font-weight: 200;
+    font-family: sans-serif;
+}
