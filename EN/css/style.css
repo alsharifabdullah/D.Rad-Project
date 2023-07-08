@@ -309,8 +309,19 @@ html {
 
 
 
+.btn2{
+    color: white;
+    background-color: #0e1523;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: transparent;
+    font-size: medium;
+    font-weight: 500;
+}
 
-
+.btn2:hover{
+    background-color: #1a2742;
+}
 
 
 .sticky {
@@ -440,7 +451,7 @@ html {
 
 
 .navLogo {
-    width: 50%;
+    width: 80%;
 }
 
 .footerlogo{
