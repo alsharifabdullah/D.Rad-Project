@@ -79,7 +79,7 @@ ol.breadcrumb li a:hover {
 
 .VidBG {
 
-    background-image: url(images/hero_dark_90_1.png);
+    background-image: url(Images/hero-dark.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -307,7 +307,9 @@ html {
     transform: translate(-50%, -50%);
 }
 
-
+.background-footer {
+    background-image: linear-gradient(to right, #04060A, #0c101b, #04060A);
+}
 
 .btn2{
     color: white;

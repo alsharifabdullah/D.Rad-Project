@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.Rad Project – Deradicalisation in Europe and Beyond: Detect, Resolve, Re-integrate</title>
+
+    <!-- FavIcons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="Images/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Images/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Images/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Images/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Images/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Images/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Images/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Images/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Images/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Images/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Images/Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Images/Favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Lato Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+    <!-- Custom JS Files -->
+    <script defer src="js/script.js"></script>
+
+
+    <!-- Owl Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <!-- NavBar -->
+    <div class="container-fluid sticky" style="padding: 12px 10px 0 10px;
+    background-image: linear-gradient(to right, #04060A, #0c101b, #04060A); z-index: 9999999999999999999;">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand" href="https://dradproject.com/"> <img class="navLogo"
+                            src="Images/DRadLogoDark copy.png" alt="">
+                    </a>
+                    <div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-label="Toggle navigation" style="position: sticky;">
+                            <span>
+                                <i class="fa-solid fa-bars " style="color: #fafafa;"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse whitetext" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link whitetext" href="#Home"> HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link whitetext" href="#About"> ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link whitetext" href="#Team"> TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link whitetext" href="EN-resources.html"> RESOURCES</a>
+                        </li>
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link whitetext" href="EN-AI.html"> DIGITAL GALLERY </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link whitetext" href="EN-map.html"> <button class="roundbtn"><i
+                                        class="fa-solid fa-earth-americas" style="color: #ffffff;"></i>
+                                    <strong>MAP</strong>
+                                </button> </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="lang"><a href="AR-DRad - Homepage.html">العربية</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- YT Video -->
+    <div class="container-fluid VidBG verticalcenter" id="Home">
+        <iframe width="1440px" height="780" src="https://www.youtube.com/embed/Bho9zaAhGLM?autoplay=1&mute=0&controls=0"
+            allow="accelerometer; autoplay;" frameborder="0" style="margin: 0 auto; display:block;"></iframe>
+    </div>
+
+    <!-- Gif -->
+    <div class="introgif01 verticalcenter" style="padding: 90px 0 20px 0;" id="About">
+        <div class="container container2">
+            <img src="Images/globeblack4k.gif" loop=infinite alt="" style="width: 80%;" loading="lazy">
+            <div class="centered centered2" style="mix-blend-mode: exclusion">
+                <h1> <strong> Detect, Resolve, Reintegrate</strong> </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container" style="padding: 30px; color: #cbd5e1;">
+        <div class="row" style="padding:  0 0 30px 0;">
+            <div class="col-sm">
+                <p>
+                <h4 style="color: #F0227C;"> <b> D.Rad is a comparative study of radicalisation <br> and
+                        polarisation in
+                        Europe and beyond... </b> </h4>
+                <!-- Disclaimer -->
+                <div class=" disclaimer-padding">
+                    <div class="disclaimer">
+                        <i class="fa-solid fa-circle-exclamation" style="color:#6366F1;"></i>
+                        <strong> Disclaimer: The list of cases presented on the <a href="map.html"> interactive
+                                map</a> are not complete. They are the cases that have been examined and evaluated by
+                            the
+                            D.Rad consortium members".</strong>
+                    </div>
+                </div>
+                <span style="font-weight: 300;"><b> It aims to
+                        identify
+                        the actors, networks, and wider social contexts driving radicalisation, particularly among
+                        young
+                        people
+                        in urban and peri-urban areas. </b> D.Rad conceptualises this through the I-GAP spectrum
+                    (injustice-grievance-alienation-polarisation) with the goal of moving towards measurable
+                    evaluations
+                    of
+                    de-radicalisation programmes. <b> Our intention is to identify the building blocks of
+                        radicalisation,</b>
+                    which
+                    include a sense of being victimised; a sense of being thwarted or lacking agency in established
+                    legal
+                    and political structures; and coming under the influence of “us vs them” identity formulations.
+                    <br>
+                    <br>
+                    <b>The D.Rad project encompasses a diverse group of countries including the UK, France, Italy,
+                        Germany, Poland, Hungary, Finland, Slovenia, Bosnia and Herzegovina, Serbia, Kosovo, Israel,
+                        Iraq, Jordan, Turkey, Georgia, and Austria.</b> These countries provide a broad geographical
+                    perspective that spans from Western Europe to the Middle East and the Caucasus.
+                    It bridges academic disciplines ranging from political science and cultural studies to social
+                    psychology and artificial intelligence. <b> Dissemination methods include D.Rad labs, D.Rad
+                        hubs,
+                        policy papers, academic workshops, visual outputs and digital galleries. As such, D.Rad
+                        establishes a rigorous foundation to Bosnia practical interventions geared to prevention,
+                        inclusion and de-radicalisation.</b></span>
+
+                </p>
+            </div>
+        </div>
+        <div class="row" style="font-size: small;" align="justify" style="padding: 20px 0;">
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i
+                        class="fa-solid fa-flag fa-2xl iconsabout" style="padding: 10px;"></i>
+                </div>
+                <p>
+                    <b>From a political viewpoint, </b> the countries studied in the D.Rad project are diverse. Some
+                    are consolidated democracies, others are just beginning the democratization process, while
+                    others have been facing a backslide in recent years. The majority of the countries in the D.Rad
+                    project are members of the European Union and the Council of Europe, as well as contracting
+                    parties to the European Convention on Human Rights. These affiliations are significant because
+                    they impose obligations on the countries to respect and promote core values such as democracy,
+                    the rule of law, and fundamental rights.
+                </p>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i
+                        class="fa-solid fa-hand-holding-dollar fa-2xl iconsabout" style="padding: 10px;"> </i>
+                </div>
+                <p>
+                    <b>Economically,</b> the majority
+                    of the countries studied in the
+                    D.Rad project have developed
+                    market economies. This means that the decisions regarding what and how to produce and distribute
+                    are determined by the laws of supply and demand, and the state plays a limited role. Some
+                    countries made the transition to market economies after World War II, while others did so in the
+                    1990s following the transition from communist systems.
+
+                </p>
+            </div>
+
+            <div class="col-sm">
+
+                <div style="padding: 20px; display: flex; justify-content: center; margin: 20px;"> <i class="fa-solid
+                    fa-users fa-2xl iconsabout" style="padding: 10px;"></i>
+                </div>
+
+
+
+                <p>
+                    <b> From a socio-cultural point of view,</b>it is interesting to note that the countries
+                    selected represent different traditions of thought and religions. These features explain why the
+                    comparative analysis in the D.Rad research shows quite a multifaceted picture, especially
+                    regarding tools and strategies to counter radicalism at the level of both preventive measures
+                    and de-radicalisation programmes. The D.Rad project offers a unique opportunity to study a
+                    diverse group of countries from different perspectives.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Design Team -->
+
+    <div class="container" style="padding: 40px 0 0  0;" id="Team">
+
+        <h4 style="color: white; padding: 30px 0; text-align: center;"> <b> Map Design Team </b> </h4>
+
+        <div class="row verticalcenter m-0">
+            <div class="col-xxs" style="padding: 0;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/Team/ivo.png" alt="Avatar" class="responsiveImg">
+                        </div>
+                        <div class="flip-card-back">
+                            <div style="margin: 25px;">
+                                <span class="card-title">
+                                    <strong> Ivo Furman </strong>
+                                </span>
+                                <p class="team-bio short">Ivo Furman is an
+                                    assistant professor at Istanbul Bilgi University’s Faculty of New Media and
+                                    Communication. He completed his PhD in Sociology at Goldsmiths College,
+                                    University of London in 2015.
+                                </p>
+                                <p class="team-bio long">Ivo Furman is an
+                                    assistant professor at Istanbul Bilgi University’s Faculty of New Media and
+                                    Communication. He completed his PhD in Sociology at Goldsmiths College,
+                                    University of London in 2015. His research has been supported by numerous
+                                    institutions including the Arts and Humanities Research Council (AHRC), the
+                                    Danish Agency for Science and Higher Education, Turkish Science and Technology
+                                    Foundation (TUBITAK) and Stiftung Mercator. He is the co-editor and co-author of
+                                    “Politics of Culture in Contemporary Turkey”, published by Edinburgh University
+                                    Press in 2021. His most recent publication (2023) for Social Media + Society,
+                                    looks at Russian mis and disinformation efforts in the Turkish Twittersphere.
+                                    <br><br>
+                                    He is currently an academic consultant for “False Information in Turkey from the
+                                    Perspective of Media Users and Resilience to False Information”, a 2 year
+                                    research project funded by Turkish Science and Technology Foundation (TUBITAK).
+                                    He is also management committee member and grant awarding coordinator for
+                                    “Grassroots of Digital Europe: from Historic to Contemporary Cultures of
+                                    Creative Computing” (GRADE), a 4 year research grant funded by European
+                                    Cooperation in Science and Technology.
+                                    <br>
+                                    His research interests include digital sociology, media histories, computational
+                                    methodologies and Turkish studies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxs" style="padding: 0;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/Team/alper.png" alt="Avatar" class="responsiveImg">
+                        </div>
+                        <div class="flip-card-back">
+                            <div style="margin: 25px;">
+                                <span class="card-title">
+                                    <strong> Alper Kırklar </strong>
+                                </span>
+                                <p class="team-bio short">
+                                    Dr. Alper Kırklar is an influential filmmaker and professor of media in
+                                    Istanbul. He specializes in implementing documentary practices into social
+                                    media and interactive storytelling.
+                                </p>
+                                <p class="team-bio long">
+                                    <br>Dr. Alper Kırklar is an influential filmmaker and professor of media in
+                                    Istanbul.<br> He specializes in implementing documentary practices into social
+                                    media
+                                    and interactive storytelling. Currently a faculty member at Istanbul Bilgi
+                                    University School of Communication, Dr. Kırklar brings his expertise to shape
+                                    the minds of aspiring media professionals. His work explores the fusion of
+                                    traditional documentary techniques with the interactive elements of social
+                                    media, pushing the boundaries of storytelling and engaging audiences in new
+                                    ways. Through his academic contributions and practical endeavors, Dr. Kırklar
+                                    continues to inspire and influence the field of media and communication.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxs" style="padding: 0;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/Team/abdullah.png" alt="Avatar" class="responsiveImg">
+                        </div>
+                        <div class="flip-card-back">
+                            <div style="margin: 25px;">
+                                <span class="card-title">
+                                    <strong> Abdullah Alsharif </strong>
+                                </span>
+                                <p class="team-bio short">Abdullah has a strong academic background in Visual
+                                    Communication Design. He obtained BA of Arts in VCD from
+                                    Bahçeşehir University in Turkey. He is also highly experienced Graphic
+                                    Designer with more than 7 years of experience.
+                                </p>
+                                <p class="team-bio long">Abdullah has a strong
+                                    academic background in Visual Communication Design. He obtained his Bachelor of
+                                    Arts degree in VCD from Bahçeşehir University in Istanbul, Turkey. Through his
+                                    undergraduate studies, he discovered his potential in communication both
+                                    visually and conceptually. He is Currently pursuing his Master of Arts degree in
+                                    Media and Communication Systems (M&CS) at Bilgi University, also located in
+                                    Istanbul.
+                                    <br><br>
+                                    He is also a highly experienced Graphic Designer with more
+                                    than seven years of experience, he has acuminated creative and technical
+                                    abilities to deliver exceptional results for diverse customer projects. Whether
+                                    it's designing branding materials, creating engaging social media content, or
+                                    crafting captivating print and digital campaigns, his expertise allows him to
+                                    seamlessly merge form and function to produce visually stunning outputs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxs" style="padding: 0;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Images/Team/can.png" alt="Avatar" class="responsiveImg">
+                        </div>
+                        <div class="flip-card-back">
+                            <div style="margin: 25px;">
+                                <span class="card-title">
+                                    <strong> Can Sucuoğlu </strong>
+                                </span>
+                                <p class="team-bio short">Trained as an
+                                    architect and designer, I specialize in data visualization and mapping. As the
+                                    Interim Director of Spatial Analysis and Visualization Initiative at the Pratt
+                                    Institute at Brooklyn, NY. </p>
+                                <p class="team-bio long">Trained as an
+                                    architect and designer, I specialize in data visualization and mapping. As the
+                                    Interim Director of Spatial Analysis and Visualization Initiative at the Pratt
+                                    Institute at Brooklyn, NY. I work on community oriented data analytics projects
+                                    with a focus on visual communication of information to the public at large.
+                                    Since 2019, I have been an organizing member of Data Through Design, an annual
+                                    exhibition that brings together work exploring artistic interpretations of
+                                    information. I am also a co-founder of Bits‘n Bricks, a research group which
+                                    provides consultancy on data-based design services and investigates the
+                                    potential of emerging digital technologies in improving urban environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Partners -->
+        <h4 style="color: white; padding: 30px 0; text-align: center;"> <b> Project Partners </b> </h4>
+        <div style="background-color: white; border-radius: 10px; height: 200px;" class="container">
+
+            <div class="container" style="padding: 40px;">
+
+
+
+                <div class="brand-carousel owl-carousel container-fluid" style="margin: 0;  ">
+
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/Austria-1-1536x666.jpg" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/bilgi-logotype-en.jpg" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/Brunel-1536x758.jpg" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/eurac_rlogo_hd.jpg" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/Free-Uni.png" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/JDU.png" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/kcss-logo.png" alt="">
+                    </div>
+                    <div class="img-div">
+                        <img src="Images/Partner Logos/LOGO-RGB-APIS-ANG-40.png" alt="">
+                    </div>
+                    <div class="img-div" style="transform: scale(.5);">
+                        <img src="Images/Partner Logos/Proni.jpg" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="background-footer">
+            <div class="footer container">
+                <div>
+                    <div>
+                        <a href="https://dradproject.com/" target=”_blank”><img class="footerlogo"
+                                src="Images/drad-logo-social-tagline-eu@3x-white-e1615230053462.png"></a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="whitefont"> <strong>The Glasgow Caledonian University</strong>
+                        <br>
+                        Cowcaddens Rd, Glasgow G4 0BA, United Kingdom
+                    </div>
+                </div>
+
+                <div>
+                    <div class="whitefont"><strong>PROJECT COORDINATION</strong>
+                        <br>
+                        Prof. Umut Korkut | Glasgow School for Business and Society, Glasgow Caledonian University | <a
+                            href="mailto:Umut.Korkut@gcu.ac.uk">Umut.Korkut@gcu.ac.uk</a>
+                        <br>Marcus Nicolson | Glasgow School for Business and Society, Glasgow Caledonian University |
+                        <a href="mailto:Marcus.Nicolson@gcu.ac.uk">Marcus.Nicolson@gcu.ac.uk</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <script>
+            $('.brand-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+
+            }) 
+        </script>
+
+</body>
+
+</html>
